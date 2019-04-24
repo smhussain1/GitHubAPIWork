@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git Hub API Work</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+</head>
+<body>
+    <main>
+        <legend>
+            <form class="entry-form" role="user-entry-form">
+                <label class="entry-label">Please Enter GitHub Handle of Repositories You'd Like to See</label>
+                <input id="user-input" type="text" for="user-input">
+                <label class="submit-entry">SubmitEntry</label>
+                <input type="submit" name="submit-handle" value="Submit!">
+            </form>
+        </legend>
+
+        <section class="repo-results hidden">
+            <h2>Here are the Results from Your Search!</h2>
+            <div class="display-results">
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- Display a list of repos belonging to a particular GitHub handle.
+Requirements:
+The user must be able to search for a GitHub user handle.
+The search must trigger a call to GitHub's API.
+The repos associated with that handle must be displayed on the page.
+You must display the repo name and link to the repo URL.
+The user must be able to make multiple searches and see only the results for the current search.
+
+-->
